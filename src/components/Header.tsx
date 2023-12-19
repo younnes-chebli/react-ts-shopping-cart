@@ -7,7 +7,7 @@ type PropsType = {
 }
 
 const Header = ({ viewCart, setViewCart }: PropsType) => {
-    const [totalItems, totlaPrice] = useCart()
+    const { totalItems, totalPrice } = useCart()
 
     const content = (
         <header className="header">
@@ -15,7 +15,7 @@ const Header = ({ viewCart, setViewCart }: PropsType) => {
                 <h1>YNS Co.</h1>
                 <div className="header__price-box">
                     <p>Total Items: {totalItems}</p>
-                    <p>Total Price: {totlaPrice}</p>
+                    <p>Total Price: {totalPrice}</p>
                 </div>
             </div>
             <Nav viewCart={viewCart} setViewCart={setViewCart} />
