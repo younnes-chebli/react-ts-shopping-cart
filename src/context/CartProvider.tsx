@@ -128,7 +128,7 @@ const initCartContextState: UseCartContextType = {
     dispatch: () => { },
     REDUCER_ACTIONS: REDUCER_ACTION_TYPE,
     totalItems: 0,
-    totalPrice: '',
+    totalPrice: '0 €',
     cart: []
 }
 
